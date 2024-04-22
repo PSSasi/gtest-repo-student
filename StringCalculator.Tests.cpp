@@ -11,3 +11,30 @@ TEST(StringCalculatorTestSuite,GivenEmptyStringZeroIsExpected){
     //Assert
     ASSERT_EQ(actualValue,expectedValue);
 }
+TEST(StringCalculatorTestSuite, Given0Output0)
+{
+    // Arrange
+    StringCalculator testStringCalculatorObj;
+    string input = "0";
+    int expectedvalue = 0;
+
+    // Act
+    int actualvalue = testStringCalculatorObj.Add(input);
+
+    // Assert
+    ASSERT_EQ(actualvalue, expectedvalue);
+}
+TEST(StringCalculatorTestSuite, Given1Output0)
+{
+    // Arrange
+    StringCalculator testStringCalculatorObj;
+    string input = "1";
+    int expectedvalue = 1;
+
+    // Act
+    int actualvalue = testStringCalculatorObj.Add(input);
+
+    // Assert
+    ASSERT_EQ(actualvalue, expectedvalue);
+}
+
